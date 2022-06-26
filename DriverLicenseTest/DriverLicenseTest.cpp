@@ -13,7 +13,7 @@ using namespace std;
 
 int driverTest()
 {
-    char correctAnswers[] = { 'B', 'D', 'A', 'A','C', 'A', 'B', 'A', 'C', 'D', 'B', 'C', 'D', 'A', 'D', 'C', 'C', 'B', 'D', 'A' };
+    char answerKey[] = { 'B', 'D', 'A', 'A','C', 'A', 'B', 'A', 'C', 'D', 'B', 'C', 'D', 'A', 'D', 'C', 'C', 'B', 'D', 'A' }; // answer key array
 
     char input;
     cout << "Please enter your answers as a single character (A, B, C, or D)." <<'\n' << "NOTE: This test is NOT case sensitive." << endl;
@@ -29,7 +29,7 @@ int driverTest()
         studentAnswers[i] = input;
 
 
-        if (studentAnswers[i] == correctAnswers[i])
+        if (studentAnswers[i] == answerKey[i])
         {
             correctAnswerTotal++;
         }
